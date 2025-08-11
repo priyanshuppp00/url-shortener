@@ -7,7 +7,7 @@ export default function App() {
     <BrowserRouter>
       <div className="min-h-screen bg-slate-50">
         <nav className="bg-white shadow p-4 flex justify-between">
-          <div className="text-lg font-semibold">Priyanshu's URL Shortener</div>
+          <div className="text-lg font-bold">Priyanshu's URL Shortener</div>
           <div className="space-x-4">
             <Link to="/" className="text-blue-600">
               Home
