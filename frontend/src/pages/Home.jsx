@@ -44,7 +44,11 @@ export default function Home() {
           className="bg-blue-600 text-white px-4 rounded cursor-pointer hover:scale-105 transition"
           disabled={loading}
         >
+<<<<<<< HEAD
           {loading ? "Shorting..." : "Shorten"}
+=======
+          {loading ? "shorting..." : "Shorten"}
+>>>>>>> 4d60d51 (update)
         </button>
       </form>
 
@@ -57,7 +61,10 @@ export default function Home() {
             target="_blank"
             rel="noreferrer"
           >
-            {short}
+            {(() => {
+              const code = short.split("/").pop();
+              return `https://${code}.com`;
+            })()}
           </a>
           <button
             className="ml-4 px-2 py-1 border rounded hover:scale-105 transition cursor-pointer"
