@@ -44,7 +44,7 @@ export default function Home() {
           className="bg-blue-600 text-white px-4 rounded cursor-pointer hover:scale-105 transition"
           disabled={loading}
         >
-          {loading ? "Working..." : "Shorten"}
+          {loading ? "Shorting..." : "Shorten"}
         </button>
       </form>
 
